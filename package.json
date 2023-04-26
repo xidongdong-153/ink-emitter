@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
+    "prepublish": "git tag -a v$(node -p \"require('./package.json').version\") -m \"Release v$(node -p \"require('./package.json').version\")\" && git push --tags",
     "publish-patch": "npm version patch && npm publish",
     "publish-minor": "npm version minor && npm publish",
     "publish-major": "npm version major && npm publish"
