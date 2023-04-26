@@ -1,0 +1,34 @@
+{
+  "name": "ink-emitter",
+  "version": "0.3.1",
+  "description": "A data sender, not limited to the framework!",
+  "type": "module",
+  "main": "dist/ink-emitter.cjs.js",
+  "module": "dist/ink-emitter.esm.js",
+  "types": "dist/types/ink-emitter.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "publish-patch": "npm version patch && npm publish",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-major": "npm version major && npm publish"
+  },
+  "keywords": [
+    "emitter",
+    "emit",
+    "event"
+  ],
+  "author": "xidongdong",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.21.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  }
+}
