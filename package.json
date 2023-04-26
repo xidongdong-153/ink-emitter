@@ -1,6 +1,6 @@
 {
   "name": "ink-emitter",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A data sender, not limited to the framework!",
   "type": "module",
   "main": "dist/ink-emitter.cjs.js",
